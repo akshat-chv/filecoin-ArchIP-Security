@@ -1,0 +1,160 @@
+.wallet-section {
+  display: flex;
+  align-items: center;
+}
+
+.simulated-wallet {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.sim-status {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: var(--info-bg);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 100px;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.6875rem;
+  color: var(--info);
+}
+
+.sim-dot {
+  width: 5px;
+  height: 5px;
+  background: var(--info);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.connect-real-btn {
+  background: var(--accent-primary);
+  color: #000;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 0.4375rem 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.connect-real-btn:hover {
+  background: var(--accent-secondary);
+  transform: translateY(-1px);
+}
+
+.wallet-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.connect-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: var(--accent-primary);
+  color: #000;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 0.4375rem 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.connect-btn:hover {
+  background: var(--accent-secondary);
+  transform: translateY(-1px);
+}
+
+.sim-btn {
+  background: var(--info-bg);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: var(--radius-md);
+  padding: 0.4375rem;
+  color: var(--info);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.sim-btn:hover {
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.wrong-network-btn {
+  background: var(--error-bg);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: var(--error);
+  border-radius: var(--radius-md);
+  padding: 0.4375rem 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.wrong-network-btn:hover {
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.connected-wallet {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.chain-btn {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.375rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.chain-btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-light);
+}
+
+.account-btn {
+  background: var(--accent-glow);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: var(--accent-primary);
+  border-radius: var(--radius-md);
+  padding: 0.375rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.account-btn:hover {
+  background: rgba(16, 185, 129, 0.2);
+}
+
+.sim-toggle-btn {
+  background: var(--info-bg);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: var(--radius-sm);
+  padding: 0.3125rem;
+  color: var(--info);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sim-toggle-btn:hover {
+  background: rgba(59, 130, 246, 0.15);
+}

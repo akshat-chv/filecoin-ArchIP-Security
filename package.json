@@ -1,0 +1,36 @@
+{
+  "name": "proofvault",
+  "license": "(MIT OR Apache-2.0)",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Decentralized file certification and timestamping on Filecoin",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "setup": "npm install && cd contracts && npm install",
+    "start": "npm run setup && npm run dev",
+    "contracts:compile": "cd contracts && npx hardhat compile",
+    "contracts:deploy:local": "cd contracts && npx hardhat run scripts/deploy.js --network hardhat",
+    "contracts:deploy:amoy": "cd contracts && npx hardhat run scripts/deploy.js --network polygonAmoy"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.1.2",
+    "@tanstack/react-query": "^5.28.4",
+    "@web3-storage/w3up-client": "^17.3.0",
+    "jspdf": "^3.0.4",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "viem": "^2.21.0",
+    "wagmi": "^2.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.3"
+  }
+}

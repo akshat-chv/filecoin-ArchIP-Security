@@ -1,0 +1,121 @@
+.tx-status-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.tx-status-modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  max-width: 380px;
+  width: 90%;
+  text-align: center;
+  animation: fadeInScale 0.3s ease-out;
+}
+
+.tx-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border-color);
+  border-top-color: var(--accent-primary);
+  border-radius: 50%;
+  margin: 0 auto 1.25rem;
+  animation: spin 0.6s linear infinite;
+}
+
+.tx-status-modal h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.375rem;
+}
+
+.tx-status-modal p {
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  margin-bottom: 0.875rem;
+}
+
+.tx-hash {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.625rem 0.875rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  margin-bottom: 0.875rem;
+}
+
+.tx-hash a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-size: 0.6875rem;
+  transition: color var(--transition-fast);
+}
+
+.tx-hash a:hover {
+  color: var(--accent-secondary);
+}
+
+.tx-success-icon {
+  color: var(--success);
+  margin-bottom: 0.875rem;
+}
+
+.tx-error-icon {
+  color: var(--error);
+  margin-bottom: 0.875rem;
+}
+
+.tx-error-message {
+  color: var(--error) !important;
+  background: var(--error-bg);
+  border-radius: var(--radius-md);
+  padding: 0.625rem 0.875rem;
+  font-size: 0.8125rem;
+}
+
+.tx-close-btn {
+  background: var(--accent-primary);
+  color: #000;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 0.625rem 1.75rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-top: 0.875rem;
+  transition: all var(--transition-base);
+}
+
+.tx-close-btn:hover {
+  background: var(--accent-secondary);
+  transform: translateY(-1px);
+}
+
+.simulated-badge {
+  display: inline-block;
+  background: var(--info-bg);
+  color: var(--info);
+  font-size: 0.625rem;
+  padding: 0.1875rem 0.4375rem;
+  border-radius: 4px;
+  margin-bottom: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
